@@ -9,21 +9,86 @@
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
+    
     <!-- App JS -->
+    
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+    <script type="text/javascript" src="/scripts/tweet-mouseenter.js"></script>
     <script type="text/javascript" src="/scripts/client.js"></script>
+    <script type="text/javascript" src="/scripts/nav-on-click.js"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
   </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
-      <span>tweeter</span>
+      <span class="tweeter">tweeter</span>
+      <button>
+      <strong>Write</strong>
+      <span>a new tweet</span>
+      </button>
     </nav>
-
+    <header id="header">
+      <div>
+          <img src="/images/profile-hex.png"> 
+      </div>
+      <br>
+      <div>
+          <h2>Tweeto</h2>
+      </div>
+    </header>
+  
     <!-- Page-specific (main) content here -->
-    <main class="container"></main>
+    <main class="container">
+      <section class="new-tweet">
+        <section id='compose-tweet'>
+          <h2>Compose Tweet</h2>
+          <div id="error-message1" class="error-message">
+            <article>⚠︎ No tweet detected. Please try again. ⚠︎</article>
+          </div>
+          <div id="error-message2" class="error-message">
+            <article>⚠︎ That tweet is way too long. Please make it shorter. ⚠︎</article>
+          </div>
+          <form class="form" type="submit" action="/tweets" method="POST"> 
+            <label for="tweet-text">What are you humming about?</label>
+            <textarea class="textarea" name="text"></textarea>
+            <div>
+              <button class="button" type="submit">Tweet</button>
+              <output class="counter">140</output>
+            </div>
+          </form>
+        </section>
+        <section id="tweet-container">
+          <!-- <section class="tweet-section">
+            <article>
+              <header>
+                <div>
+                  <img src="https://i.imgur.com/nlhLi3I.png" alt="avatar" width="50" height="50">            
+                  <h3>Descartes</h3>
+                </div>  
+                <h4>@rd</h4>
+              </header>        
+              <p>"Je pense , donc je suis"</p>
+              <br>
+              <footer>
+                <div>
+                  <span>Oct 05 2020 15:33</span>
+                </div>
+                <div>🔁 🤍 ⚐</div>
+              </footer>
+            </article>
+          </section> -->
+        </section>
+      </section>      
+    </main>
   </body>
 </html>

@@ -21,5 +21,19 @@ body {
 }
 
 /*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
+* Additional CSS can be defined below or in other CSS files, as per instructions
+*/
+@media only screen and (min-width: 1024px) {
+  body{
+    display: flex;
+    flex: 3;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+.tweeter {
+  font-family: Bungee, sans-serif;
+}

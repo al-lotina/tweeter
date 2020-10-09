@@ -1,0 +1,35 @@
+@media only screen and (min-width: 350px) {
+  nav {
+    height: 120px;
+    padding: 1.5em;
+    color: #ffffff;
+    background-color: #ed9600;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  nav button {
+    background-color: #ed9600;
+    color: #ffffff;
+  }
+}
+
+
+@media only screen and (min-width: 1024px) {
+  nav {
+    height: 120px;
+    padding: 1.5em;
+    color: #ffffff;
+    background-color: #4056A1;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  nav button {
+    background-color: #4056A1;
+  }
+}

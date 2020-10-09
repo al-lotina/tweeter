@@ -1,0 +1,22 @@
+@media only screen and (min-width: 350px) {
+  #header {
+    margin-top: 120px;
+    height: 400px;
+    color: #FFFFFF;
+    background-color: #ed9600;
+    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #header {
+    float: left;
+    flex: 1;
+    margin-top: 200px;
+    margin-left: 100px;
+  }
+}
